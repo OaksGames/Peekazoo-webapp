@@ -12,13 +12,16 @@
 <link rel="stylesheet" href="ds/peek-a-zoo-design-system-21609f26-fdb8-49ea-b7d8-f581f8961b90/colors_and_type.css">
 <script src="ds/organic-a12369a7-8fd1-442b-95a1-3804d19a2b98/ds_bundle.js"></script>
 <script src="ds/peek-a-zoo-design-system-21609f26-fdb8-49ea-b7d8-f581f8961b90/ds_bundle.js"></script>
-<script src="image-slot.js"></script>
 <style>
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 :root { --pz-op-a: 1; --pz-op-b: 0; --pz-dot-a-w: 34px; --pz-dot-b-w: 12px; --pz-dot-a-bg: #5BB8E8; --pz-dot-b-bg: #F0E0CC;
-  --pz-hero-dir: row; --pz-hero-minh: min(100svh, 64vw); --pz-hv-pos: absolute; --pz-hv-ar: auto; --pz-hv-h: 100%; --pz-scrim-op: 1; --pz-hero-pt: clamp(78px, 9vw, 112px); --pz-hero-pb: clamp(28px, 4vw, 56px); --pz-hero-r: clamp(40px, 7vw, 90px); --pz-hero-txt-max: 420px; --pz-content-pos: absolute; --pz-nav-inline: flex; --pz-burger: none; --pz-cta-head: inline-block; }
+  --pz-hero-dir: row; --pz-hero-minh: min(100svh, 64vw); --pz-hv-pos: absolute; --pz-hv-ar: auto; --pz-hv-h: 100%; --pz-scrim-op: 1; --pz-hero-pt: clamp(78px, 9vw, 112px); --pz-hero-pb: clamp(28px, 4vw, 56px); --pz-hero-r: clamp(40px, 7vw, 90px); --pz-hero-txt-max: 420px; --pz-content-pos: absolute; --pz-nav-inline: flex; --pz-burger: none; --pz-cta-head: inline-block;
+  --pz-join-pad-r: clamp(96px, 15vw, 200px); --pz-join-form-cols: repeat(2, minmax(0, 1fr)); }
 @media (max-width: 1024px) {
   :root { --pz-hero-dir: column; --pz-hero-minh: auto; --pz-hv-pos: relative; --pz-hv-ar: 4 / 3; --pz-hv-h: auto; --pz-scrim-op: 0; --pz-hero-pt: clamp(26px, 7vw, 40px); --pz-hero-pb: clamp(32px, 8vw, 48px); --pz-hero-r: 0px; --pz-hero-txt-max: 100%; --pz-content-pos: relative; --pz-nav-inline: none; --pz-burger: inline-flex; --pz-cta-head: none; }
+}
+@media (max-width: 680px) {
+  :root { --pz-join-pad-r: clamp(48px, 16vw, 90px); --pz-join-form-cols: 1fr; }
 }
 body { margin: 0; background: #FFF8F0; }
 a { color: #C47B0A; text-decoration: none; }
@@ -288,7 +291,7 @@ summary::-webkit-details-marker { display: none; }
     <div style="max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: clamp(26px, 4vw, 56px);">
       <div style="flex: 1 1 400px; min-width: min(100%, 280px); position: relative; animation: pzRise .9s cubic-bezier(.34,1.56,.64,1) both; animation-timeline: view(); animation-range: entry 4% entry 76%;">
         <div style="border-radius: 42% 58% 46% 54% / 52% 46% 54% 48%; overflow: hidden; box-shadow: var(--pz-shadow-card);">
-          <image-slot id="pz-family" class="washed" shape="rect" fit="cover" placeholder="Drop a photo of a family playing together" style="width: 100%; height: clamp(240px, 40vw, 420px); background: url(&quot;./untitled-design-8-1--msq01fuj-m7rl.png&quot;) center / cover no-repeat"></image-slot>
+          <img src="assets/family_photo.png" alt="A family playing together" style="width: 100%; height: clamp(240px, 40vw, 420px); object-fit: cover; display: block;">
         </div>
         <img src="assets/small-character-panda.png" alt="Golu the panda" style="position: absolute; right: -6px; bottom: -22px; height: clamp(78px, 12vw, 140px); width: auto; animation: pzSway 5.5s ease-in-out infinite alternate;">
       </div>
@@ -310,22 +313,22 @@ summary::-webkit-details-marker { display: none; }
       <img src="assets/small-character-ullu.png" alt="Luna the owl" style="position: absolute; right: -8px; top: -18px; height: clamp(64px, 9vw, 120px); width: auto; animation: pzSway 6s ease-in-out infinite alternate;">
       <h2 style="font-family: var(--pz-font-display); font-weight: 800; font-size: clamp(26px, 4.2vw, 48px); line-height: 1.06; letter-spacing: -0.015em; margin: 0 0 clamp(20px, 3vw, 32px); text-wrap: pretty; animation: pzRise .8s cubic-bezier(.34,1.56,.64,1) both; animation-timeline: view(); animation-range: entry 4% entry 78%;">Questions parents ask.</h2>
 
-      <details style="background: var(--pz-surface); border-radius: 30px 44px 30px 44px; box-shadow: var(--pz-shadow-card); padding: clamp(16px, 2vw, 22px) clamp(20px, 2.6vw, 28px); margin: 0 0 12px;">
+      <details style="background: var(--pz-surface); border-radius: 30px 44px 30px 44px; box-shadow: var(--pz-shadow-card); padding: clamp(16px, 2vw, 22px) clamp(20px, 2.6vw, 28px); margin: 0 0 12px; animation: pzRise .8s cubic-bezier(.34,1.56,.64,1) both; animation-timeline: view(); animation-range: entry 4% entry 78%;">
         <summary style="list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; font-family: var(--pz-font-display); font-weight: 700; font-size: clamp(16px, 1.9vw, 21px);">Does it work on any TV?<span style="flex: 0 0 auto; width: 32px; height: 32px; border-radius: 50%; background: var(--pz-gold-tint); color: var(--pz-gold-dark); display: grid; place-items: center; font-size: 20px; line-height: 1;">+</span></summary>
         <p style="margin: 12px 0 0; color: var(--pz-text-secondary);">Piko clips onto the top edge of any television, or sits on a shelf nearby. Smart TV, old TV, the one at the grandparents' — all the same to us.</p>
       </details>
 
-      <details style="background: var(--pz-surface); border-radius: 30px 44px 30px 44px; box-shadow: var(--pz-shadow-card); padding: clamp(16px, 2vw, 22px) clamp(20px, 2.6vw, 28px); margin: 0 0 12px;">
+      <details style="background: var(--pz-surface); border-radius: 30px 44px 30px 44px; box-shadow: var(--pz-shadow-card); padding: clamp(16px, 2vw, 22px) clamp(20px, 2.6vw, 28px); margin: 0 0 12px; animation: pzRise .8s cubic-bezier(.34,1.56,.64,1) both; animation-timeline: view(); animation-range: entry 7% entry 82%;">
         <summary style="list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; font-family: var(--pz-font-display); font-weight: 700; font-size: clamp(16px, 1.9vw, 21px);">How much room do we need?<span style="flex: 0 0 auto; width: 32px; height: 32px; border-radius: 50%; background: var(--pz-gold-tint); color: var(--pz-gold-dark); display: grid; place-items: center; font-size: 20px; line-height: 1;">+</span></summary>
         <p style="margin: 12px 0 0; color: var(--pz-text-secondary);">About two big steps of space in front of the TV. Small living rooms are the normal case, not the exception.</p>
       </details>
 
-      <details style="background: var(--pz-surface); border-radius: 30px 44px 30px 44px; box-shadow: var(--pz-shadow-card); padding: clamp(16px, 2vw, 22px) clamp(20px, 2.6vw, 28px); margin: 0 0 12px;">
+      <details style="background: var(--pz-surface); border-radius: 30px 44px 30px 44px; box-shadow: var(--pz-shadow-card); padding: clamp(16px, 2vw, 22px) clamp(20px, 2.6vw, 28px); margin: 0 0 12px; animation: pzRise .8s cubic-bezier(.34,1.56,.64,1) both; animation-timeline: view(); animation-range: entry 10% entry 86%;">
         <summary style="list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; font-family: var(--pz-font-display); font-weight: 700; font-size: clamp(16px, 1.9vw, 21px);">Does it need internet?<span style="flex: 0 0 auto; width: 32px; height: 32px; border-radius: 50%; background: var(--pz-gold-tint); color: var(--pz-gold-dark); display: grid; place-items: center; font-size: 20px; line-height: 1;">+</span></summary>
         <p style="margin: 12px 0 0; color: var(--pz-text-secondary);">Only to bring home new games. The games already in the box play happily offline.</p>
       </details>
 
-      <details style="background: var(--pz-surface); border-radius: 30px 44px 30px 44px; box-shadow: var(--pz-shadow-card); padding: clamp(16px, 2vw, 22px) clamp(20px, 2.6vw, 28px); margin: 0 0 12px;">
+      <details style="background: var(--pz-surface); border-radius: 30px 44px 30px 44px; box-shadow: var(--pz-shadow-card); padding: clamp(16px, 2vw, 22px) clamp(20px, 2.6vw, 28px); margin: 0 0 12px; animation: pzRise .8s cubic-bezier(.34,1.56,.64,1) both; animation-timeline: view(); animation-range: entry 13% entry 90%;">
         <summary style="list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; font-family: var(--pz-font-display); font-weight: 700; font-size: clamp(16px, 1.9vw, 21px);">Can two children play?<span style="flex: 0 0 auto; width: 32px; height: 32px; border-radius: 50%; background: var(--pz-gold-tint); color: var(--pz-gold-dark); display: grid; place-items: center; font-size: 20px; line-height: 1;">+</span></summary>
         <p style="margin: 12px 0 0; color: var(--pz-text-secondary);">Yes. The camera sees both of them, and the games hand the turn from one to the other.</p>
       </details>
@@ -334,7 +337,7 @@ summary::-webkit-details-marker { display: none; }
   </section>
 
   <section id="join" data-screen-label="Join the list" style="scroll-margin-top: 90px; padding: 0 clamp(20px, 5vw, 64px) clamp(48px, 7vw, 90px);">
-    <div class="pz-stitch" style="position: relative; max-width: 1180px; margin: 0 auto; border-radius: clamp(28px, 4vw, 48px); overflow: hidden; padding: clamp(32px, 5vw, 68px) clamp(96px, 15vw, 200px) clamp(32px, 5vw, 68px) clamp(22px, 4vw, 60px); background-color: var(--pz-blue); background-image: linear-gradient(180deg, rgba(255,255,255,.22), rgba(255,255,255,0) 45%), var(--felt); background-size: auto, 320px auto; background-blend-mode: overlay, multiply; box-shadow: 0 8px 0 var(--pz-blue-dark), var(--pz-shadow-card); animation: pzRise .9s cubic-bezier(.34,1.56,.64,1) both; animation-timeline: view(); animation-range: entry 4% entry 74%;">
+    <div class="pz-stitch" style="position: relative; max-width: 1180px; margin: 0 auto; border-radius: clamp(28px, 4vw, 48px); overflow: hidden; padding: clamp(32px, 5vw, 68px) var(--pz-join-pad-r) clamp(32px, 5vw, 68px) clamp(22px, 4vw, 60px); background-color: var(--pz-blue); background-image: linear-gradient(180deg, rgba(255,255,255,.22), rgba(255,255,255,0) 45%), var(--felt); background-size: auto, 320px auto; background-blend-mode: overlay, multiply; box-shadow: 0 8px 0 var(--pz-blue-dark), var(--pz-shadow-card); animation: pzRise .9s cubic-bezier(.34,1.56,.64,1) both; animation-timeline: view(); animation-range: entry 4% entry 74%;">
       <img src="assets/small-character-lobo.png" alt="Lobo the fox" style="position: absolute; z-index: 3; pointer-events: none; right: clamp(-20px, -1vw, 0px); bottom: -14px; height: clamp(100px, 16vw, 210px); width: auto; animation: pzSway 6s ease-in-out infinite alternate;">
       <div style="position: relative; display: flex; flex-wrap: wrap; align-items: center; gap: clamp(20px, 3vw, 44px);">
         <div style="flex: 1 1 260px; min-width: min(100%, 220px);">
@@ -352,7 +355,7 @@ summary::-webkit-details-marker { display: none; }
 
         <div style="flex: 1 1 330px; min-width: min(100%, 260px); max-width: 560px;">
         <sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
-          <form onSubmit="{{ onJoin }}" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 10px;">
+          <form onSubmit="{{ onJoin }}" style="display: grid; grid-template-columns: var(--pz-join-form-cols); gap: 12px 10px;">
             <label style="display: grid; gap: 6px;">
               <span style="font-family: var(--pz-font-display); font-weight: 700; font-size: 13px; color: #fff; padding-left: 14px;">Name *</span>
               <input type="text" name="name" required="required" value="{{ name }}" onChange="{{ onName }}" placeholder="Your name" style="width: 100%; box-sizing: border-box; font-family: var(--pz-font-body); font-weight: 700; font-size: clamp(14px, 1.4vw, 15px); color: var(--pz-text); background: var(--pz-surface); border: 2px solid rgba(255,255,255,.9); border-radius: 999px; padding: 10px 16px; outline: none;">
