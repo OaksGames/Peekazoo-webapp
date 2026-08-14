@@ -16,12 +16,12 @@
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 :root { --pz-op-a: 1; --pz-op-b: 0; --pz-dot-a-w: 34px; --pz-dot-b-w: 12px; --pz-dot-a-bg: #5BB8E8; --pz-dot-b-bg: #F0E0CC;
   --pz-hero-dir: row; --pz-hero-minh: min(100svh, 64vw); --pz-hv-pos: absolute; --pz-hv-ar: auto; --pz-hv-h: 100%; --pz-scrim-op: 1; --pz-hero-pt: clamp(78px, 9vw, 112px); --pz-hero-pb: clamp(28px, 4vw, 56px); --pz-hero-r: clamp(40px, 7vw, 90px); --pz-hero-txt-max: 420px; --pz-content-pos: absolute; --pz-nav-inline: flex; --pz-burger: none; --pz-cta-head: inline-block;
-  --pz-join-pad-r: clamp(96px, 15vw, 200px); --pz-join-form-cols: repeat(2, minmax(0, 1fr)); }
+  --pz-join-pad-r: clamp(96px, 15vw, 200px); --pz-join-form-cols: repeat(2, minmax(0, 1fr)); --pz-faq-cols: repeat(2, minmax(0, 1fr)); }
 @media (max-width: 1024px) {
   :root { --pz-hero-dir: column; --pz-hero-minh: auto; --pz-hv-pos: relative; --pz-hv-ar: 4 / 3; --pz-hv-h: auto; --pz-scrim-op: 0; --pz-hero-pt: clamp(26px, 7vw, 40px); --pz-hero-pb: clamp(32px, 8vw, 48px); --pz-hero-r: 0px; --pz-hero-txt-max: 100%; --pz-content-pos: relative; --pz-nav-inline: none; --pz-burger: inline-flex; --pz-cta-head: none; }
 }
 @media (max-width: 680px) {
-  :root { --pz-join-pad-r: clamp(48px, 16vw, 90px); --pz-join-form-cols: 1fr; }
+  :root { --pz-join-pad-r: clamp(48px, 16vw, 90px); --pz-join-form-cols: 1fr; --pz-faq-cols: 1fr; }
 }
 body { margin: 0; background: #FFF8F0; }
 a { color: #C47B0A; text-decoration: none; }
@@ -234,7 +234,7 @@ summary::-webkit-details-marker { display: none; }
         <img src="assets/just-move.webp" alt="Just move — a child reaching towards the TV while Piko watches" style="display: block; width: 100%; height: auto;">
       </div>
 
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr)); gap: clamp(16px, 2.4vw, 28px); margin-top: clamp(32px, 5vw, 56px);">
+      <div style="display: grid; grid-template-columns: var(--pz-faq-cols); gap: clamp(16px, 2.4vw, 28px); margin-top: clamp(32px, 5vw, 56px);">
         <div style="background: var(--pz-surface); border-radius: 40px 26px 44px 30px; box-shadow: var(--pz-shadow-card); padding: clamp(22px, 2.8vw, 32px); cursor: pointer; transition: transform 260ms cubic-bezier(.34,1.56,.64,1), box-shadow 260ms cubic-bezier(.34,1.56,.64,1), border-radius 300ms cubic-bezier(.34,1.56,.64,1); animation: pzRise .8s cubic-bezier(.34,1.56,.64,1) both; animation-timeline: view(); animation-range: entry 5% entry 80%;" style-hover="transform: translateY(-8px) rotate(-1.4deg); box-shadow: 0 18px 30px rgba(61,44,30,.18); border-radius: 26px 44px 30px 46px;" style-active="transform: translateY(-2px) rotate(0deg);">
           <div style="display: flex; align-items: center; gap: 12px;">
             <span style="width: 40px; height: 40px; border-radius: 50%; background: var(--pz-coral); box-shadow: 0 3px 0 var(--pz-coral-dark); flex: 0 0 auto; transition: transform 300ms cubic-bezier(.34,1.56,.64,1);"></span>
