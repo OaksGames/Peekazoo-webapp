@@ -145,7 +145,7 @@ function ActivityScreen({
       fontSize: 28
     }
   }, "\u2B50")), /*#__PURE__*/React.createElement("img", {
-    src: "../../assets/character-lobo.png",
+    src: "../../assets/jiku.webp",
     alt: "",
     style: {
       position: 'absolute',
@@ -263,7 +263,7 @@ function ActivityScreen({
       boxShadow: '0 4px 14px rgba(61,44,30,0.07)'
     }
   }, /*#__PURE__*/React.createElement("img", {
-    src: "../../assets/character-mimi.png",
+    src: "../../assets/pebi.webp",
     alt: "",
     style: {
       width: 70,
@@ -413,7 +413,7 @@ function HomeScreen({
   }, {
     id: 'stories',
     title: 'Stories',
-    subtitle: 'Read with Mimi',
+    subtitle: 'Read with Pebi',
     icon: '../../assets/icon-story.webp',
     color: 'pink',
     badge: null
@@ -457,7 +457,7 @@ function HomeScreen({
       gap: 12
     }
   }, /*#__PURE__*/React.createElement(PZAvatar, {
-    src: "../../assets/character-mimi.png",
+    src: "../../assets/pebi.webp",
     color: "#F0F4FF",
     size: 64,
     ring: true
@@ -851,7 +851,7 @@ function LessonSelectScreen({
       minHeight: 0
     }
   }, /*#__PURE__*/React.createElement("img", {
-    src: "../../assets/character-ullu.png",
+    src: "../../assets/nimu.webp",
     alt: "",
     style: {
       width: '70%',
@@ -872,7 +872,7 @@ function LessonSelectScreen({
       letterSpacing: '0.06em',
       textTransform: 'uppercase'
     }
-  }, "Luna says"), /*#__PURE__*/React.createElement("div", {
+  }, "Nimu says"), /*#__PURE__*/React.createElement("div", {
     style: {
       fontFamily: '"Baloo 2", sans-serif',
       fontWeight: 800,
@@ -1753,23 +1753,23 @@ function ProfileScreen({
     value: 0
   }];
   const stickers = [{
-    src: '../../assets/character-mimi.png',
+    src: '../../assets/pebi.webp',
     unlocked: true,
     bg: '#F0F4FF'
   }, {
-    src: '../../assets/character-golu.png',
+    src: '../../assets/nimu.webp',
     unlocked: true,
     bg: '#A8DC70'
   }, {
-    src: '../../assets/character-ullu.png',
+    src: '../../assets/nimu.webp',
     unlocked: true,
     bg: '#FFF6E0'
   }, {
-    src: '../../assets/character-lobo.png',
+    src: '../../assets/jiku.webp',
     unlocked: false,
     bg: '#FFEDE6'
   }, {
-    src: '../../assets/character-panda.png',
+    src: '../../assets/mimi.webp',
     unlocked: false,
     bg: '#F4ECFF'
   }, {
@@ -1847,7 +1847,7 @@ function ProfileScreen({
       gap: 6
     }
   }, /*#__PURE__*/React.createElement(PZAvatar, {
-    src: "../../assets/character-golu.png",
+    src: "../../assets/nimu.webp",
     color: "#A8DC70",
     size: 96,
     ring: true
@@ -2051,7 +2051,7 @@ function SplashScreen({
       alignItems: 'flex-end'
     }
   }, /*#__PURE__*/React.createElement("img", {
-    src: "../../assets/character-panda.png",
+    src: "../../assets/mimi.webp",
     alt: "",
     style: {
       width: 140,
@@ -2059,7 +2059,7 @@ function SplashScreen({
       filter: 'drop-shadow(0 6px 10px rgba(0,0,0,0.18))'
     }
   }), /*#__PURE__*/React.createElement("img", {
-    src: "../../assets/character-mimi.png",
+    src: "../../assets/pebi.webp",
     alt: "",
     style: {
       width: 220,
@@ -2069,7 +2069,7 @@ function SplashScreen({
       filter: 'drop-shadow(0 8px 12px rgba(0,0,0,0.22))'
     }
   }), /*#__PURE__*/React.createElement("img", {
-    src: "../../assets/character-lobo.png",
+    src: "../../assets/jiku.webp",
     alt: "",
     style: {
       width: 140,

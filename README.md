@@ -1,4 +1,4 @@
-# Piko — Peekazoo marketing site
+# Peekazoo marketing site
 
 A static one-page site. No build step, no server code: open `index.html` or upload the folder to any static host.
 
@@ -8,6 +8,7 @@ Because the page loads its assets over HTTP, open it through a tiny local server
 
 ```sh
 python3 -m http.server 8000
+npx --yes http-server . -p 8000
 # then visit http://localhost:8000
 ```
 
